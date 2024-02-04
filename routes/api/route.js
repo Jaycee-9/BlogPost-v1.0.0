@@ -26,6 +26,6 @@ router.get("/file/:filename", getImage);
 router.get("/posts", authenticateToken, getAllPosts);
 router.get("/post/:id", authenticateToken, getPost);
 
-router.delete("/delete/:id", authenticateToken, deletePost);
+router.delete("delete/:id", authenticateToken, deletePost);
 
 export default router;
